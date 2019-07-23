@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AppClima</string>
+    <string name="texto_bienvenida">Bienvenidos a la app del clima!</string>
+    <string name="tag_ciudades_ciudad">tag.ciudades.ciudad</string>
+    <string name="api_clima_appid">4bec8783d763f39ddda5c6a4c2ca2c67</string>
+    <string name="titulo_email">Email</string>
+    <string name="titulo_telefono">Teléfono</string>
+    <string name="titulo_direccion">Dirección</string>
+    <string name="titulo_peso">Peso</string>
+    <string name="titulo_edad">Edad</string>
+    <string name="titulo_eliminar_contacto">Eliminar contacto</string>
+    <string name="titulo_editar_contacto">Editar contacto</string>
+    <string name="foursquare_client_id">KWOVQ0DTTAPEKWHJ0ZH0ZEQE33FADCCVHIGRDA3FF0AF4B20</string>
+    <string name="foursquare_client_secret">4AA5PS34B0SSYD2NNB1IUO4GC0M3BBYXR3KCDHSPOFIJCPTZ</string>
+    <string name="linkedin_client_id">78bgc2o6nvxhpz</string>
+    <string name="linkedin_client_secret">TTrhsRV373k2v5vA</string>
+</resources>

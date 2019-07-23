@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ejemplo1_curso_kotlin">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".Oauth.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Ubicacion.Permiso">
+        </activity>
+
+
+        <activity android:name=".Contactos.NuevoContacto">
+        </activity>
+        <activity
+                android:name=".Contactos.DetalleContacto"
+                android:parentActivityName=".Contactos.ListaContactos">
+        </activity>
+        <activity android:name=".Contactos.ListaContactos">
+        </activity>
+
+        <activity android:name=".Grid.grid">
+        </activity>
+        <activity android:name=".Comida.Comidas">
+
+        </activity>
+        <activity android:name=".CicloDeVida.Ciclo">
+        </activity>
+
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".Ciudades">
+        </activity>
+        <activity android:name=".Lista.Lista">
+        </activity>
+        <activity android:name="com.foursquare.android.nativeoauth.TokenExchangeActivity"
+                  android:theme="@android:style/Theme.Dialog"/>
+    </application>
+
+</manifest>
