@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 
 import com.example.ejemplo1_curso_kotlin.R
 
@@ -20,13 +21,36 @@ private const val ARG_PARAM2 = "param2"
  */
 class ContenidoPeliculas : Fragment() {
 
+    var vista:View? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contenido_peliculas, container, false)
+        vista = inflater.inflate(R.layout.fragment_contenido_peliculas, container, false)
+        cambiarFoto()
+        return vista
     }
 
+    fun nuevaInstancia(index: Int): ContenidoPeliculas{
+        val f = ContenidoPeliculas()
+
+        val args = Bundle()
+        args.putInt("INDEX", index)
+        f.arguments = args
+
+        return f
+    }
+
+    fun obtenerIndex(): Int {
+        val index = arguments?.getInt("INDEX",0)!!
+        return index
+    }
+
+    private fun cambiarFoto() {
+        val foto = vista!!.findViewById(R.id.ivFoto) as ImageView
+        foto.setImageResource(ListadoPeliculas.peliculas?.get(obtenerIndex())?.imagen!!)
+    }
 
 }

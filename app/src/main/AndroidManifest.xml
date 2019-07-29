@@ -14,17 +14,26 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Oauth.Login">
+        <activity android:name=".TabLayout.TabBase">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".Fragmentos.Detalle">
+        </activity>
+        <activity android:name=".Fragmentos.BaseFragmentos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Oauth.Login">
+        </activity>
         <activity android:name=".Ubicacion.Permiso">
         </activity>
-
-
         <activity android:name=".Contactos.NuevoContacto">
         </activity>
         <activity
@@ -33,23 +42,21 @@
         </activity>
         <activity android:name=".Contactos.ListaContactos">
         </activity>
-
         <activity android:name=".Grid.grid">
         </activity>
         <activity android:name=".Comida.Comidas">
-
         </activity>
         <activity android:name=".CicloDeVida.Ciclo">
         </activity>
-
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".Ciudades">
         </activity>
         <activity android:name=".Lista.Lista">
         </activity>
-        <activity android:name="com.foursquare.android.nativeoauth.TokenExchangeActivity"
-                  android:theme="@android:style/Theme.Dialog"/>
+        <activity
+                android:name="com.foursquare.android.nativeoauth.TokenExchangeActivity"
+                android:theme="@android:style/Theme.Dialog"/>
     </application>
 
 </manifest>
